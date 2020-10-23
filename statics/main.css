@@ -1,0 +1,70 @@
+body{
+    display:grid;
+    grid-template-columns: 12% auto 300px 100px 12%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "top-bar top-bar top-bar top-bar top-bar"
+                         "main-bar main-bar main-bar main-bar main-bar"
+                         "hero hero hero hero hero"
+                         "gallery gallery gallery gallery gallery"
+                         "blog blog blog side-bar side-bar"
+                         "main-footer main-footer main-footer main-footer main-footer";
+}
+.top-bar{
+    grid-area: top-bar;
+    background-color: aqua;
+}
+.main-bar{
+    grid-area: main-bar;
+}
+.hero {
+    background-color: yellowgreen;
+    grid-area: hero;
+}
+.blog{
+    grid-area:blog;
+}
+.side-bar{
+    grid-area: side-bar;
+}
+.main-footer{
+    grid-area:main-footer;
+}
+.gallery {
+    background-color:royalblue;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "first-img second-img third-img fourth-img fifth-img"
+                         "first-desciption second-description third-description ";
+    grid-area:gallery;
+}
+.first.gallery-img{
+    grid-area:first-img
+}
+.second.gallery-img{
+    grid-area:second-img
+}
+.third.gallery-img{
+    grid-area:third-img
+}
+.fourth.gallery-img{
+    grid-area:fourth-img
+}
+.fifth.gallery-img{
+    grid-area:fifth-img
+}
+.first.gallery-description{
+    grid-area:first-description
+}
+.second.gallery-description{
+    grid-area:second-description
+}
+.third.gallery-description{
+    grid-area:third-description
+}
+.fourth.gallery-description{
+    grid-area:fourth-description
+}
+.fifth.gallery-description{
+    grid-area:fifth-description
+}
